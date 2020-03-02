@@ -25,8 +25,7 @@ public class Bubble {
     public static void main(String[] args) {
         int[] array= {1,4,5,2,8,6,7,9,11,3,10,15,13,12,14};
         System.out.println("排序前："+ Arrays.toString(array));
-        bubbleSort(array);
-        System.out.println("排序后："+Arrays.toString(array));
+        int[] ints = bubbleSort(array);
+        System.out.println("排序后："+Arrays.toString(ints));
     }
-
 }

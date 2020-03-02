@@ -15,15 +15,15 @@ public class reverse {
         while (i < len) {
             char c = str.charAt(i);
             if(map.get(c)==null){
+                map.put(c,1);
                 sb.append(c);
             }
-            map.put(c,1);
             i++;
         }
         return sb.toString();
     }
     public static void main(String[] args) {
-        String reverse = reverseStr("123abc123dfsac");
+        String reverse = reverseStr("aaaaaabbbbbbbbccccaaabbbcccaav");
         System.out.println(reverse);
     }
 }
